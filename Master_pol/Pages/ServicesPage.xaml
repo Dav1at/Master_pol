@@ -20,25 +20,23 @@
         <ListView Grid.Row="2" Name="LViewServices">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid>
-                        <StackPanel>
-                            <TextBlock Width="auto" Margin="10" FontFamily="Segoe UI" FontSize="15">
-                                <TextBlock.Text >
-                                    <MultiBinding StringFormat="{} Тип: {0} | {1}&#x0a; Директор: {2}&#x0a; Номер: +7{3}&#x0a; Рейтинг: {4}&#x0a; Скидка: {5}% ">
-                                        <Binding Path="type_partner"/>
-                                        <Binding Path="name"/>
-                                        <Binding Path="contact_person"/>
-                                        <Binding Path="phonne"/>
-                                        <Binding Path="reiting"/>
-                                        <Binding Path="discount"/>
-                                    </MultiBinding>
-                                </TextBlock.Text>
-                            </TextBlock>
-                            <StackPanel Orientation="Horizontal">
-                                <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click" Margin="10" Background="#67BA80" FontFamily="Segoe UI" FontSize="16"></Button>
-                            </StackPanel>
+                    <StackPanel>
+                        <TextBlock Width="auto" Margin="10" FontFamily="Segoe UI" FontSize="15">
+                            <TextBlock.Text >
+                                <MultiBinding StringFormat="{} Тип: {0} | {1}&#x0a; Директор: {2}&#x0a; Номер: +7{3}&#x0a; Рейтинг: {4}&#x0a; Скидка: {5}% ">
+                                    <Binding Path="type_partner"/>
+                                    <Binding Path="name"/>
+                                    <Binding Path="contact_person"/>
+                                    <Binding Path="phonne"/>
+                                    <Binding Path="reiting"/>
+                                    <Binding Path="discount"/>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click" Margin="10" Background="#67BA80" FontFamily="Segoe UI" FontSize="16"></Button>
                         </StackPanel>
-                    </Grid>
+                    </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
