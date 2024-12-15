@@ -1,0 +1,51 @@
+﻿<Page x:Class="Master_pol.Pages.AddEditServicePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Master_pol.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEditServicePage">
+
+    <Grid>
+        <Grid Background="#F4E8D3"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                
+                <TextBlock Text="Редактирование партнера" HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="28" Margin="0 0 0 10"></TextBlock>
+               
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Тип " FontFamily="Segoe UI" FontSize="22" Margin="0 0 30 0"></TextBlock>
+                    <TextBox Name="TboxTip" FontFamily="Segoe UI" FontSize="22" Margin="109 0 0 10" MinWidth="130"></TextBox>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Наименование" FontFamily="Segoe UI" FontSize="22" Margin="0 0 30 0"></TextBlock>
+                    <TextBox Name="TboxName" FontFamily="Segoe UI" FontSize="22" Margin="0 0 0 10" MinWidth="130"></TextBox>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Директрор" FontFamily="Segoe UI" FontSize="22" Margin="0 0 30 0"></TextBlock>
+                    <TextBox Name="TboxPerson" FontFamily="Segoe UI" FontSize="22" Margin="40 0 0 10" MinWidth="130"></TextBox>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Номер" FontFamily="Segoe UI" FontSize="22" Margin="0 0 0 0"></TextBlock>
+                    <TextBlock Text="+7" FontFamily="Segoe UI" FontSize="22" Margin="84 1 3 0"></TextBlock>
+                    <TextBox Name="TboxPhone" FontFamily="Segoe UI" FontSize="22" Margin="0 0 0 10" MinWidth="130"></TextBox>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Рейтинг" FontFamily="Segoe UI" FontSize="22" Margin="0 0 30 0"></TextBlock>
+                    <TextBox Name="TboxReiting" FontFamily="Segoe UI" FontSize="22" Margin="74 0 0 100" MinWidth="30"></TextBox>
+                    <Button Height="30" Width="200" Margin="-230 0 0 0" Name="BtnSave" Click="BtnSave_Click" Content="Сохранить" Background="#67BA80" FontFamily="Segoe UI" FontSize="18"></Button>
+                </StackPanel>
+                
+            </StackPanel>
+        </StackPanel>
+
+        <Button Content="Назад" HorizontalAlignment="Right" VerticalAlignment="Bottom" Name="BtnNazad" Click="BtnNazad_Click2"  Width="119" Height="40" Background="#67BA80" FontFamily="Segoe UI" FontSize="18" Margin="0,0,215,-20"/>
+    
+    </Grid>
+</Page>
